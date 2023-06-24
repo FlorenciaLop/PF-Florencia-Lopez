@@ -1,0 +1,136 @@
+$primary-color: #fafd86;
+$primary-font: "Manrope", sans-serif;
+$box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+$border: 1px solid #ccc;
+$border-radius: 4px;
+$btn-padding: 10px 20px;
+$margin-bottom: 20px;
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Normalization */
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  font-family: $primary-font;
+}
+
+/* FORM */
+.container-form {
+  background-color: #f0f5f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+  margin: 0 auto;
+  max-width: 450px;
+  text-align: center;
+  animation: fadeIn 2s;
+
+  @media (max-width: 500px) {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+h2 {
+  margin-bottom: $margin-bottom;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: $border;
+    border-radius: $border-radius;
+    margin-bottom: $margin-bottom;
+    box-sizing: border-box;
+
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+  }
+
+  input[type="submit"] {
+    background-color: $primary-color;
+    color: #000;
+    border: none;
+    padding: $btn-padding;
+    border-radius: $border-radius;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+  }
+}
+
+.main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.hr-continuar {
+  display: flex;
+  padding-top: 30px;
+  font-size: 13px;
+
+  hr {
+    margin-top: 10px;
+    width: 43%;
+    height: 1px;
+  }
+}
+
+/* Make .oauth a flex container with no dots in the list */
+.oauth {
+  ul {
+    display: flex;
+
+    li {
+      margin-right: 10px;
+      list-style-type: none;
+      padding-right: 23px;
+    }
+  }
+}
+
+.elije {
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

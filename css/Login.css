@@ -1,0 +1,127 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Normalization */
+button,
+input[type=submit],
+input[type=reset] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  font-family: "Manrope", sans-serif;
+}
+
+/* FORM */
+.container-form {
+  background-color: #f0f5f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  max-width: 450px;
+  text-align: center;
+  animation: fadeIn 2s;
+}
+@media (max-width: 500px) {
+  .container-form {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+form input[type=text],
+form input[type=email],
+form input[type=tel],
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+@media (max-width: 500px) {
+  form input[type=text],
+  form input[type=email],
+  form input[type=tel],
+  form textarea {
+    width: 100%;
+  }
+}
+form input[type=submit] {
+  background-color: #fafd86;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+.main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.hr-continuar {
+  display: flex;
+  padding-top: 30px;
+  font-size: 13px;
+}
+.hr-continuar hr {
+  margin-top: 10px;
+  width: 43%;
+  height: 1px;
+}
+
+/* Make .oauth a flex container with no dots in the list */
+.oauth ul {
+  display: flex;
+}
+.oauth ul li {
+  margin-right: 10px;
+  list-style-type: none;
+  padding-right: 23px;
+}
+
+.elije {
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*# sourceMappingURL=Login.css.map */

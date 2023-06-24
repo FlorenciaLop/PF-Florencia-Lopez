@@ -1,0 +1,77 @@
+@import "Normalization";
+
+$footer-bg-color: #d9d9d9;
+$footer-text-color: black;
+$footer-text-color-alt: #b6b6b6;
+$footer-link-color: #000000;
+$primary-color: #606060;
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+
+  .column {
+    flex: 0 0 30%;
+    margin-bottom: 20px;
+    padding-left: 50px;
+
+    p {
+      max-width: 300px;
+      color: $footer-text-color-alt;
+    }
+  }
+
+  .logo {
+    p {
+      margin-top: 10px;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    &:hover {
+      p {
+        transform: scale(1.2);
+        color: $primary-color;
+      }
+    }
+  }
+
+  .navigation {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: $footer-link-color;
+        text-decoration: none;
+        transition: transform 0.3s, color 0.3s;
+
+        &:hover {
+          transform: scale(1.2);
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      max-height: 30px;
+    }
+  }
+}
+/* END FOOTER */

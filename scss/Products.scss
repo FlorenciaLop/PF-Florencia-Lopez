@@ -1,0 +1,22 @@
+@import "Normalization";
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card {
+  border: none;
+}
+
+.new-section-container {
+  animation: fadeIn 2s;
+}
+
+.products-container {
+  animation: fadeIn 2s;
+}
