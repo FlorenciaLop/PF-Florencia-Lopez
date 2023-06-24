@@ -7,6 +7,11 @@ Este es el proyecto final para CoderHouse, el cual es un sitio web de e-commerce
 - CSS
 - SASS
 - Bootstrap
+- Hosteado en Vercel
+
+## Live site
+
+https://pf-florencia-lopez.vercel.app/
 
 ## Conceptos Clave Aplicados:
 - Optimización SEO
